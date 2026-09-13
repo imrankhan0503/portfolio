@@ -10,6 +10,9 @@ body {
     color: #333;
     background: linear-gradient(135deg, #e0f0ff, #fdfcff);
     scroll-behavior: smooth;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*  Header & Navigation  */
@@ -216,6 +219,9 @@ header {
 }
 
 /*  Skills Section  */
+.main {
+    flex: 1;
+}
 .skills-section {
     max-width: 1000px;
     margin: 3rem auto;
@@ -229,6 +235,7 @@ header {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    list-style: none;
 }
 
 .skills-list li {
@@ -327,6 +334,11 @@ footer {
     }
 
     .skills-list {
-        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .skills-list li {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.85rem;
+        width: auto;
     }
 }
